@@ -15,6 +15,8 @@ import com.crm.Pom.HomePagePom;
 import com.crm.SeleniumUtility.MouseAndKeyboard;
 @Listeners(com.crm.Listeners.ListenerWithScreenshot.class)
 public class TestScript extends TeamLeaseRegtechBaseClass{
+
+	int num=10;
 	@Test(priority = 1)
 	public void profileCheck() {
 		try {
