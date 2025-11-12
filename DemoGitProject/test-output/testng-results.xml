@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
+  <reporter-output>
+    <line>
+      <![CDATA[OnStart]]>
+    </line>
+    <line>
+      <![CDATA[onTestStart]]>
+    </line>
+    <line>
+      <![CDATA[onTestSkipped]]>
+    </line>
+    <line>
+      <![CDATA[onTestStart]]>
+    </line>
+    <line>
+      <![CDATA[onTestSkipped]]>
+    </line>
+    <line>
+      <![CDATA[onFinish]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-10-09T16:48:51 IST" name="Default suite" finished-at="2025-10-09T16:49:04 IST" duration-ms="13699">
+    <groups>
+    </groups>
+    <test started-at="2025-10-09T16:48:51 IST" name="Default test" finished-at="2025-10-09T16:49:04 IST" duration-ms="13699">
+      <class name="TLRegtechTestScript.TestScript">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:TLRegtechTestScript.TestScript@202b0582]" started-at="2025-10-09T16:48:51 IST" name="openBrowser" finished-at="2025-10-09T16:49:04 IST" duration-ms="13391" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 138
+Current browser version is 140.0.7339.210 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DESKTOP-FPUJFKA', ip: '10.220.100.77'
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files\Google\Chr..., extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 138
+Current browser version is 140.0.7339.210 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DESKTOP-FPUJFKA', ip: '10.220.100.77'
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files\Google\Chr..., extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:139)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:95)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:233)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:162)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at com.crm.BaseClass.TeamLeaseRegtechBaseClass.openBrowser(TeamLeaseRegtechBaseClass.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:TLRegtechTestScript.TestScript@202b0582]" started-at="2025-10-09T16:49:04 IST" name="login" finished-at="2025-10-09T16:49:04 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="profileCheck()[pri:1, instance:TLRegtechTestScript.TestScript@202b0582]" started-at="2025-10-09T16:49:04 IST" name="profileCheck" finished-at="2025-10-09T16:49:04 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 138
+Current browser version is 140.0.7339.210 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DESKTOP-FPUJFKA', ip: '10.220.100.77'
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files\Google\Chr..., extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 138
+Current browser version is 140.0.7339.210 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DESKTOP-FPUJFKA', ip: '10.220.100.77'
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files\Google\Chr..., extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:139)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:95)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:233)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:162)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at com.crm.BaseClass.TeamLeaseRegtechBaseClass.openBrowser(TeamLeaseRegtechBaseClass.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[onTestSkipped]]>
+            </line>
+            <line>
+              <![CDATA[onTestStart]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- profileCheck -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:TLRegtechTestScript.TestScript@202b0582]" started-at="2025-10-09T16:49:04 IST" name="logout" finished-at="2025-10-09T16:49:04 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:TLRegtechTestScript.TestScript@202b0582]" started-at="2025-10-09T16:49:04 IST" name="login" finished-at="2025-10-09T16:49:04 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="verifyDraftCount()[pri:2, instance:TLRegtechTestScript.TestScript@202b0582]" started-at="2025-10-09T16:49:04 IST" name="verifyDraftCount" finished-at="2025-10-09T16:49:04 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 138
+Current browser version is 140.0.7339.210 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DESKTOP-FPUJFKA', ip: '10.220.100.77'
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files\Google\Chr..., extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 138
+Current browser version is 140.0.7339.210 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DESKTOP-FPUJFKA', ip: '10.220.100.77'
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files\Google\Chr..., extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:139)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:95)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:233)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:162)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52)
+at com.crm.BaseClass.TeamLeaseRegtechBaseClass.openBrowser(TeamLeaseRegtechBaseClass.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[onTestSkipped]]>
+            </line>
+            <line>
+              <![CDATA[onFinish]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyDraftCount -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:TLRegtechTestScript.TestScript@202b0582]" started-at="2025-10-09T16:49:04 IST" name="logout" finished-at="2025-10-09T16:49:04 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TLRegtechTestScript.TestScript@202b0582]" started-at="2025-10-09T16:49:04 IST" name="closeBrowser" finished-at="2025-10-09T16:49:04 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TLRegtechTestScript.TestScript -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
